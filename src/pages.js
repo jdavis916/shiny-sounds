@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState ,useReducer } from "react"
 
 export function Home(){
 	return(
