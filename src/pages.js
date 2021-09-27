@@ -1,5 +1,6 @@
-import React, { useState ,useReducer } from "react"
-
+import React, { useState ,useReducer } from "react";
+import cartReducer from './reducers/cartReducer';
+import CartComponent from './components/cart';
 export function Home(){
 	return(
 		<div>
@@ -30,9 +31,7 @@ export function Signout(){
 }
 export function Cart(){
 	return(
-		<div>
-			<h1>Cart</h1>
-		</div>
+		<CartComponent></CartComponent>
 	);
 }
 export function Contact(){
