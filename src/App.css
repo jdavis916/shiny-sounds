@@ -20,7 +20,17 @@
 .mainNav{
   background-color: var(--c6);
 }
+.total, .cartItems{
+  margin-top: 25px;
+}
+.total-txt{
+  width: 50%;
 
+}
+.total-txt, .total{
+  display: flex;
+  justify-content: space-between;
+}
 footer{
   border-top: 5px solid var(--c3);
   margin-top: 10px;
