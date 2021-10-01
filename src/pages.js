@@ -1,10 +1,39 @@
 import React from "react"
-
+import {
+	Col,
+  Container,
+  Nav,
+  Navbar,  
+  NavDropdown,
+  Row
+   } from 'react-bootstrap';
 export function Home(){
 	return(
-		<div>
-			<h1>Home</h1>
-		</div>
+		<Container className="pgWrapper pgHome">
+			<section className="row pgHeader">
+				<Col xs={12}>
+					<h1>Shiny Sounds</h1>
+				</Col>				
+			</section>
+			<section className="row">
+				<Col xs={12}>
+					<h2>Section 1</h2>
+				</Col>
+				<Col xs={12}>
+				<Row>
+					<Col xs={12} md={4}>
+						<h3>Column 1</h3>
+					</Col>
+					<Col xs={12} md={4}>
+						<h3>Column 2</h3>
+					</Col>
+					<Col xs={12} md={4}>
+						<h3>Column 3</h3>
+					</Col>
+					</Row>
+				</Col>				
+			</section>
+		</Container>
 	);
 }
 export function Store(){
