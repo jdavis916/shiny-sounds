@@ -8,32 +8,31 @@ import {
   Row
    } from 'react-bootstrap';
 import cartReducer from './reducers/cartReducer';
-import CartComponent from './components/cart';
+import CartComponent from './components/Checkout/cart';
+import Cta1 from './components/Homepage/CtaLeft';
+import Cta2 from './components/Homepage/CtaRight';
+import Genres from './components/Homepage/Genres';
+import Populartracks from './components/Homepage/PopularTracks';
+import Hero from './components/Homepage/HomeHero';
 export function Home(){
 	return(
 		<Container className="pgWrapper pgHome">
 			<section className="row pgHeader">
-				<Col xs={12}>
-					<h1>Shiny Sounds</h1>
+				<Hero />
+			</section>
+			<section className="row ctaBlock">
+				<Col>
+					<Cta1 />
+				</Col>
+				<Col>
+					<Cta2 />
 				</Col>
 			</section>
 			<section className="row">
-				<Col xs={12}>
-					<h2>Section 1</h2>
-				</Col>
-				<Col xs={12}>
-				<Row>
-					<Col xs={12} md={4}>
-						<h3>Column 1</h3>
-					</Col>
-					<Col xs={12} md={4}>
-						<h3>Column 2</h3>
-					</Col>
-					<Col xs={12} md={4}>
-						<h3>Column 3</h3>
-					</Col>
-					</Row>
-				</Col>
+				<Genres />
+			</section>
+			<section className="row">
+				<Populartracks />
 			</section>
 		</Container>
 	);

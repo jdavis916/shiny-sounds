@@ -1,6 +1,6 @@
 import React, { Component, useState ,useReducer } from 'react';
-import { get_items, del_item } from '../actions/types';
-import { cartReducer, initialState } from '../reducers/cartReducer';
+//import { get_items, del_item } from '../../actions/types';
+//import { cartReducer, initialState } from '../../reducers/cartReducer';
 
 export default function CartComponent(props){
 
