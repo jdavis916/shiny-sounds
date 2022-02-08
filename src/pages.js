@@ -29,9 +29,11 @@ export function Home(){
 				</Col>
 			</section>
 			<section className="row">
+				<h2 className='text-center'>Popular Genres</h2>
 				<Genres />
 			</section>
 			<section className="row">
+			<h2 className='text-center'>Hot Right Now</h2>
 				<Populartracks />
 			</section>
 		</Container>
