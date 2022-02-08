@@ -5,9 +5,9 @@ class Cta1 extends React.Component{
     }*/
     render(){
         return (
-            <section className='ctaSect1'>
+            <section className='ctaSect'>
                 <h2>CTA 1</h2>
-                <button>CTA 1</button>
+                <button type='button' className='btn btn-primary'>CTA 1</button>
             </section>
         );
     }

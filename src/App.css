@@ -20,6 +20,45 @@
 .mainNav{
   background-color: var(--c6);
 }
+.hero{
+  width: 75%;
+  margin: auto;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ctaBlock{
+  display: flex;
+  justify-content: space-around;
+}
+.ctaSect{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
+}
+.genres, .popularSect{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  /*grid-template-rows: 1fr 1fr 1fr;*/
+}
+.genreItem, .popTrack{
+  height: 250px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.genreItem p{
+  text-align: center;
+  position: relative; 
+  top: 50%;
+}
+.popTrack p{
+  text-align: center;
+}
 .total, .cartItems{
   margin-top: 25px;
 }
