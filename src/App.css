@@ -20,6 +20,9 @@
 .mainNav{
   background-color: var(--c6);
 }
+section h2{
+  padding-bottom: 40px;
+}
 .hero{
   width: 75%;
   margin: auto;
@@ -42,7 +45,7 @@
 }
 .genres, .popularSect{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 15px;
   /*grid-template-rows: 1fr 1fr 1fr;*/
 }
@@ -76,7 +79,7 @@
 }
 footer{
   border-top: 5px solid var(--c3);
-  margin-top: 10px;
+  margin-top: 100px;
   padding: 10px 0;
 }
 h1,h2,h3{
@@ -84,7 +87,7 @@ h1,h2,h3{
 }
 
 .pgWrapper > section:not(:first-of-type){
-  padding-top: 20px;
+  padding-top: 40px;
 }
 /*Page*/
 /*
@@ -136,3 +139,18 @@ h1,h2,h3{
 }
 
 /*Responsive*/
+@media(min-width: 400px){
+  .genres, .popularSect{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(min-width: 800px){
+  .genres, .popularSect{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(min-width: 991px){
+  .genres, .popularSect{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
