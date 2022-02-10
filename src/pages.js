@@ -33,7 +33,7 @@ export function Home(){
 				<Genres />
 			</section>
 			<section className="row">
-			<h2 className='text-center'>Hot Right Now</h2>
+				<h2 className='text-center'>Hot Right Now</h2>
 				<Populartracks />
 			</section>
 		</Container>
