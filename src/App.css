@@ -90,22 +90,7 @@ h1,h2,h3{
   padding-top: 40px;
 }
 /*Page*/
-/*
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-*/
 .songInfo{
   list-style: none;
   display: flex;
@@ -129,14 +114,38 @@ h1,h2,h3{
   width: 100%;
   text-align: left;
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*SignUp*/
+figure.formStripeWrapper{
+  border: 3px solid #000;
+  max-width: 500px;
+  margin: 0 auto;
+  /*padding:  1em;*/
 }
+.formStripeWrapperInner{
+  /*maxWidth: "500px";*/
+  margin: "0 auto";
+}
+.formStripe{
+  display: "block";
+  width: "100%",;
+}
+.formStripe > div{
+  display: "flex";
+  flexDirection: "column";
+  alignItems: "center";
+}
+fieldset.FormGroup{
+  /*width: 100%;*/
+}
+.FormRow {
+    display:grid;
+    grid-template-columns: .5fr 1fr;
+    grid-gap:5px;
+    padding: 1em;
+}
+.FormRow label       { text-align:right; }
+.FormRow label:after { content: ":"; }
 
 /*Responsive*/
 @media(min-width: 400px){

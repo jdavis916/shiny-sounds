@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import { BrowserRouter as Router} from 'react-router-dom';
 //import reportWebVitals from './reportWebVitals';
+let bool = true;
+//console.log(bool);
+//console.log(bool);  
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
